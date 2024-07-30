@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-24T17:03:17 IST" name="Surefire suite" finished-at="2024-07-24T17:03:17 IST" duration-ms="864">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRuner@4ac3c60d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-07-24T17:03:17 IST" name="Surefire test" finished-at="2024-07-24T17:03:17 IST" duration-ms="864">
+      <class name="cucumber.TestNGTestRuner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRuner@4ac3c60d]" started-at="2024-07-24T17:03:17 IST" name="setUpClass" finished-at="2024-07-24T17:03:17 IST" duration-ms="651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2552f2cb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRuner@4ac3c60d]" started-at="2024-07-24T17:03:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-24T17:03:17 IST" duration-ms="118" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["purchase the order Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+at ke.TestComponent.BaseTest.initializeDriver(BaseTest.java:61)
+at ke.TestComponent.BaseTest.launchApplication(BaseTest.java:69)
+at ke.stepDefinations.stepdefinationsimpl.i_landed_on_Ecommerce_page(stepdefinationsimpl.java:27)
+at ✽.I landed on Ecommerce page(file:///C:/Users/kedar/eclipse-workspace/ked12/src/test/java/cucumber/StandloneTest.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRuner@4ac3c60d]" started-at="2024-07-24T17:03:17 IST" name="tearDownClass" finished-at="2024-07-24T17:03:17 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRuner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
