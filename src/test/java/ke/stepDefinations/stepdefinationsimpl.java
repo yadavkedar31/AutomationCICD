@@ -24,8 +24,7 @@ public class stepdefinationsimpl extends BaseTest {
 
 	@Given("I landed on Ecommerce page")
 	public void i_landed_on_Ecommerce_page() throws IOException {
-		//pagehdgjashgdjahgsdjahgsjd
-		//asdasdgahgjh
+		
 		landinPage = launchApplication();
 	}
 
